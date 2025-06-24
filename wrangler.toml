@@ -1,0 +1,12 @@
+name = "substracker"
+main = "index_v2.js"
+compatibility_date = "2025-06-24"
+
+# 定义一个模拟的 KV 命名空间
+kv_namespaces = [
+  { binding = "SUBSCRIPTIONS_KV", id = "SUBSCRIPTIONS_KV" }
+]
+
+# 启用 Cron Triggers
+[triggers]
+crons = ["30 * * * *"]
